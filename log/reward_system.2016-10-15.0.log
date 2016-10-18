@@ -1,0 +1,11 @@
+2016-10-15 10:21:36,603 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2016-10-15 10:21:37,160 [main] INFO  reward-system.env - 
+-=[reward_system started successfully using the development profile]=- 
+2016-10-15 10:21:37,415 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2016-10-15 10:21:37,523 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2016-10-15 10:21:37,912 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2016-10-15 10:21:37,914 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2016-10-15 10:21:37,940 [main] INFO  reward-system.core - #'reward-system.config/env started 
+2016-10-15 10:21:37,941 [main] INFO  reward-system.core - #'reward-system.handler/init-app started 
+2016-10-15 10:21:37,942 [main] INFO  reward-system.core - #'reward-system.core/http-server started 
+2016-10-15 10:21:37,942 [main] INFO  reward-system.core - #'reward-system.core/repl-server started 
