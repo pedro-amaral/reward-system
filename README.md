@@ -1,5 +1,5 @@
 # Reward Sytem [![Build Status][travis-svg]][travis-link]
-[![Heroku][Reward System on Heroku]][heroku-link]
+[>>Reward System on Heroku!][heroku-link]
 
 This project is a code exercise that aims to solve a reward by invitation of users problem. It was developed based on [Luminus][luminus] template 
 with [ring-swagger][swagger] and [MongoDB][mongodb] for data storage.
