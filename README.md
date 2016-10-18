@@ -1,23 +1,31 @@
-# Reward Sytem [![Build Status][travis-svg]][travis-link] [![Dependencies Status][deps-svg]][deps-link]
-[![Heroku][heroku-svg]][heroku-link]
+# Reward Sytem [![Build Status][travis-svg]][travis-link]
+[![Heroku][Reward System on Heroku]][heroku-link]
 
-This project is a code exercise that aims to solve a reward by invitation of users problem.
+This project is a code exercise that aims to solve a reward by invitation of users problem. It was developed based on [Luminus][luminus] template 
+with [ring-swagger][swagger] and [MongoDB][mongodb] for data storage.
 
 ## Problem Description
 
+A company is planning a way to reward customers for inviting their friends. They're planning a reward system that will
+give a customer points for each confirmed invitation they played a part into. The definition of a confirmed invitation is one where another invitation's invitee invited someone.
+
+The inviter gets (1/2)^k points for each confirmed invitation, where k is the level of the invitation: level 0 (people directly invited) yields 1 point, level 1 (people invited by someone invited by the original customer) gives 1/2 points, level 2 invitations (people invited by someone on level 1) awards 1/4 points and so on. Only the first invitation counts: multiple invites sent to the same person don't produce any further points, even if they come from different inviters.
+
+Also, to count as a valid invitation, the invited customer must have invited someone (so customers that didn't invite anyone don't count as points for the customer that invited them).
+
 ## Prerequisites
 
-You will need [Leiningen][lein] 2.0 or above installed. Plus, you need [PostgreSQL][postgresql]. Note to self:
-Start homebrewed postgres on OS X via `postgres -D /usr/local/var/postgres`.
+You will need [Leiningen][lein] 2.0 or above installed. Plus, you need [MongoDB][mongodb].
 
-## Resources
- - [Forum for the Book by the Pragmatic Bookshelf][pragma-forum]
- - [Clojurians Slack Group][clojurians] (I'm [@jan][clojurians-jan] if you wanna say hey)
- - [Luminus - Clojure micro-framework for Web Development][luminus]
- - [HugSQL - A Clojure library for embracing SQL][hugsql]
- - [conman - Database connection management and SQL query generation][conman]
- - [eastwood - A Clojure lint tool][eastwood]
- - [kibit - There's a function for that][kibit]
+## Development
+
+To start the web server for the application, run:
+
+    `$ lein run`
+
+Run tests with:
+
+    `$ lein test`
 
 [swagger]: https://github.com/metosin/ring-swagger
 [mongodb]: http://www.mongodb.com/
