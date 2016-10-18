@@ -22,7 +22,7 @@ Start homebrewed postgres on OS X via `postgres -D /usr/local/var/postgres`.
 [swagger]: https://github.com/metosin/ring-swagger
 [mongodb]: http://www.mongodb.com/
 [luminus]: http://www.luminusweb.net/
-[heroku-link]: https://verpickled.herokuapp.com/
+[heroku-link]: https://reward-system-nubank.herokuapp.com/swagger-ui/index.html
 [heroku-svg]: http://img.shields.io/badge/picturegallery-onHeroku-008eff.svg
 [travis-link]: https://travis-ci.org/janraasch/picture-gallery
 [travis-svg]: https://travis-ci.org/janraasch/picture-gallery.svg?branch=master

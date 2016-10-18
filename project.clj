@@ -1,7 +1,7 @@
 (defproject reward_system "0.1.0-SNAPSHOT"
 
   :description "Reward System - code exercise"
-  :url "http://example.com/FIXME"
+  :url "https://reward-system-nubank.herokuapp.com/"
 
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [selmer "1.0.9"]
